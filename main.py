@@ -273,7 +273,7 @@ def weather_listen():
             return "Error with the speech recognition service."
 
 # OpenWeatherMap API Key
-WEATHER_API_KEY = "24af3fb524434959043886b890cae7d5" 
+WEATHER_API_KEY = "your_new_weather_key" 
 def get_weather(city):
     """ Fetch weather details for a given city """
     url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={WEATHER_API_KEY}&units=metric"
@@ -321,12 +321,12 @@ def play_spotify(song_name):
         speak("I couldn't find that song on Spotify.")
 
 # Configure Gemini API
-API_KEY = "AIzaSyBLF0LzV86rienyeGoQBzHyKN_RhvzEwJk"  
+API_KEY = "your_new_google_key"  
 genai.configure(api_key=API_KEY)
 
 recognizer = sr.Recognizer()
 engine = pyttsx3.init()
-newsapi = "bb666b280d12465db5f39f20b0885529"
+newsapi = "your_news_api"
 
 def open_app(app_name):
     """ Open an application if found in the dictionary """
